@@ -1,0 +1,31 @@
+% --Environment--
+
+UseCase = 0
+% HOM Identification = 0, HOM Growth Rate Identification = 1, Data Denoising = 2
+
+UseObjective = 0
+% Model Retraining = 0, Model Further Training = 1, Predictions = 2, Details Only = 3
+
+% --Datasets and Metadata--
+
+datasets = ["C:/Users/HP/Desktop/ANL/DS2"]
+%paths to where datasets are stored in memory
+
+num_scans_use = 6
+%number of scans to use from total scans
+
+trainperc = 0.8
+%percentage of data to use for training (rounded up)
+
+bunches_to_skip = 4
+%bunches to skip incase data contains empty bunches
+
+% --Hyperparameters--
+
+multiprocessing = False
+
+batch_size = 8
+epochs = 10
+n_units = 128
+
+max_queue = 5
