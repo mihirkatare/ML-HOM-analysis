@@ -1,4 +1,5 @@
 import ast
+
 def parse(path):
     with open(path) as f:
         temp = dict()

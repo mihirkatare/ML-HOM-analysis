@@ -29,8 +29,8 @@ class data:
             for i in templist:
                 if(isfile(dir + "/" + i)):
                     if(os.path.splitext(dir + "/" + i)[1] == ".csv"):
-                        if(len(i.split("_")) == 3):
-                            fsplit = os.path.splitext(i)[0].split("_")
+                        if(len(i.split("_")) == 3 or len(i.split("_")) == 4):
+                            fsplit = os.path.splitext(i)[0].split("_", 2)
                             if(int(fsplit[0]) not in self.files):
                                 self.files[int(fsplit[0])] = []
                             if( fsplit[1][-4:] == "sets" ):

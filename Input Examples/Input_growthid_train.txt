@@ -6,7 +6,7 @@ UseCase = 0
 UseObjective = 0
 % Model Retraining = 0, Model Further Training = 1, Predictions = 2, Details Only = 3
 % Path to where to save the model
-Modelpath = "post/model_growth.h5"
+Modelpath = "post/model_growth_1.h5"
 % Path to where pretrained model is saved
 savedpath = None
 % --Datasets and Metadata--

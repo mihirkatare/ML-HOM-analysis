@@ -3,15 +3,15 @@
 UseCase = 0
 %HOM Growth Rate Identification = 0, Data Denoising = 1
 
-UseObjective = 0
+UseObjective = 2
 % Model Retraining = 0, Model Further Training = 1, Predictions = 2, Details Only = 3
 % Path to where to save the model
 Modelpath = "post/model_growth.h5"
 % Path to where pretrained model is saved
-savedpath = None
+savedpath = "post/model_growth.h5"
 % --Datasets and Metadata--
 
-datasets = ["C:/Users/HP/Desktop/ANL/DS2"]
+datasets = ["C:/Users/HP/Desktop/ANL/dstest"]
 path_to_gr = "C:/Users/HP/Desktop/ANL/DS2/gr.mat"
 path_to_avg = "C:/Users/HP/Desktop/ANL/DS2avgs/"
 predsavepath = "post/testsave/"
@@ -28,11 +28,11 @@ bunches_to_skip = 4
 UseGPU = False
 %Use True only if Tensorflow GPU support has been installed
 
-batch_size = 9
+batch_size = 1
 
 kernel_size = 5
 
-shuffle_samples = True
+shuffle_samples = False
 
 epochs = 2
 

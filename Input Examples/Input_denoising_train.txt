@@ -1,12 +1,12 @@
 % --Environment--
 
-UseCase = 0
+UseCase = 1
 %HOM Growth Rate Identification = 0, Data Denoising = 1
 
 UseObjective = 0
 % Model Retraining = 0, Model Further Training = 1, Predictions = 2, Details Only = 3
 % Path to where to save the model
-Modelpath = "post/model_growth.h5"
+Modelpath = "post/model_den2_1.h5"
 % Path to where pretrained model is saved
 savedpath = None
 % --Datasets and Metadata--
@@ -28,7 +28,7 @@ bunches_to_skip = 4
 UseGPU = False
 %Use True only if Tensorflow GPU support has been installed
 
-batch_size = 9
+batch_size = 81
 
 kernel_size = 5
 
@@ -38,6 +38,6 @@ epochs = 2
 
 reduced_timesteps = 16
 
-truncate_at_timestep = 500
+truncate_at_timestep = None
 
 max_queue = 20
